@@ -1,0 +1,165 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.layout</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="layout.html">layout</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/NetChartSettingsLayout.html">NetChartSettingsLayout</a>.</div>
+<div class="class-description"><p>Adjustable settings to get desired net chart layout style and animation while and before interacting.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_advanced" class="property" data-property="layout.advanced">
+		    <div class="property-header"><span class="property-name">advanced</span>: <a class="type-ref" href="../../../full-reference/anonymous type.html">anonymous type</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Advanced chart settings. Be advised that they are subject to change, backwards compatibility is not guaranteed.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Properties</h5>
+				<div class="nested-code" style="display: none;">
+					<div class="nested-code properties">
+							<div id="doc_advanced.adaptiveFreezeTreshold" class="property" data-property="layout.advanced.adaptiveFreezeTreshold">
+							    <div class="property-header"><span class="property-name">adaptiveFreezeTreshold</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">1.2</span></div></div>
+							    </div>
+							</div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_aspectRatio" class="property" data-property="layout.aspectRatio">
+		    <div class="property-header"><span class="property-name">aspectRatio</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div></div>
+			<p>Whether to fit network in aspect ratio of chart viewport. Useful for small networks that always fit in chart and are not intended to be zoomed in / out.</p>
+		    </div>
+		</div>
+		<div id="doc_globalLayoutOnChanges" class="property" data-property="layout.globalLayoutOnChanges">
+		    <div class="property-header"><span class="property-name">globalLayoutOnChanges</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div></div>
+			<p>Whether to perform global layout on network changes. Use it for better node placement at the cost of chart slowdown on network changes.</p>
+		    </div>
+		</div>
+		<div id="doc_gravity" class="property" data-property="layout.gravity">
+		    <div class="property-header"><span class="property-name">gravity</span>: <a class="type-ref" href="../../../full-reference/NetChartGravitySettings.html">NetChartGravitySettings</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+					<div>Introduced in version <strong>1.17.0</strong>.</div>
+				</div>
+		<h5><a href="layout/gravity.html">View section details</a></h5>
+			<p>For dynamic layout, settings for gravity that pulls all nodes together.</p>
+		    </div>
+		</div>
+		<div id="doc_groupSpacing" class="property" data-property="layout.groupSpacing">
+		    <div class="property-header"><span class="property-name">groupSpacing</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>	<div>Introduced in version <strong>1.16.0</strong>.</div>
+				</div>
+			<p>Desired horizontal distance between neighboring nodes with different parents in the hierarchy layout. By default <code>2*nodeSpacing</code></p>
+		    </div>
+		</div>
+		<div id="doc_incrementalLayoutMaxTime" class="property" data-property="layout.incrementalLayoutMaxTime">
+		    <div class="property-header"><span class="property-name">incrementalLayoutMaxTime</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">300</span></div></div>
+			<p>Maximum time to wait for incremental layout to be completed. Note that bigger value will get nicer placement on network updates at the cost of longer delay.</p>
+		    </div>
+		</div>
+		<div id="doc_initialLayoutMaxTime" class="property" data-property="layout.initialLayoutMaxTime">
+		    <div class="property-header"><span class="property-name">initialLayoutMaxTime</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">2000</span></div></div>
+			<p>Maximum time to wait for initial layout to be completed. Note that bigger value will get nicer placement of big networks at the cost of long initial delay.</p>
+		    </div>
+		</div>
+		<div id="doc_layoutFreezeMinTimeout" class="property" data-property="layout.layoutFreezeMinTimeout">
+		    <div class="property-header"><span class="property-name">layoutFreezeMinTimeout</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">1500</span></div></div>
+			<p>Dynamic layout can be stopped faster if no more movement is detected.</p>
+		    </div>
+		</div>
+		<div id="doc_layoutFreezeTimeout" class="property" data-property="layout.layoutFreezeTimeout">
+		    <div class="property-header"><span class="property-name">layoutFreezeTimeout</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">10000</span></div></div>
+			<p>Dynamic layout is stopped after user is inactive for this time.</p>
+		    </div>
+		</div>
+		<div id="doc_mode" class="property" data-property="layout.mode">
+		    <div class="property-header"><span class="property-name">mode</span>: "dynamic" | "radial" | "hierarchy" | "static"</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">"dynamic"</span></div></div>
+			<p>Layout mode.</p>
+			Valid values:
+				<ul class="values">
+				    <li><span class="property-value">dynamic</span> - incrementally update whole network when user moves nodes
+				    </li><li><span class="property-value">radial</span> - Position graph nodes in concentric rings, starting form initial node.
+				    </li><li><span class="property-value">hierarchy</span> - Position graph nodes top-down, starting from initial node
+				    </li><li><span class="property-value">static</span> - other nodes stay fixed while user moves nodes.
+				</li></ul>
+		    </div>
+		</div>
+		<div id="doc_nodeSpacing" class="property" data-property="layout.nodeSpacing">
+		    <div class="property-header"><span class="property-name">nodeSpacing</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">16</span></div></div>
+			<p>Desired distance between nodes.</p>
+		    </div>
+		</div>
+		<div id="doc_rotation" class="property" data-property="layout.rotation">
+		    <div class="property-header"><span class="property-name">rotation</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">0</span></div>	<div>Introduced in version <strong>1.14.0</strong>.</div>
+				</div>
+			<p>For hierarhy layout, clockwise rotation of the tree(s), measured in degrees.
+				0 = top-down tree; 90 = right-left tree; 180 = bottom-up tree, etc. Also affects placement of multiple trees the same way.</p>
+		    </div>
+		</div>
+		<div id="doc_rowSpacing" class="property" data-property="layout.rowSpacing">
+		    <div class="property-header"><span class="property-name">rowSpacing</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Desired vertical distance between node rows in the hierarchy layout.</p>
+		    </div>
+		</div>
+		<div id="doc_twoRingRadialLayout" class="property" data-property="layout.twoRingRadialLayout">
+		    <div class="property-header"><span class="property-name">twoRingRadialLayout</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>	<div>Introduced in version <strong>1.12.0</strong>.</div>
+				</div>
+			<p>For radial layout, whether to lay out the first level in two rings, if necessary.</p>
+		    </div>
+		</div>
+	</div>
+
+    

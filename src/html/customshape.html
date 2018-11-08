@@ -1,0 +1,279 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.style.nodeSelected.customShape</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../../../settings.html">NetChart Settings</a>
+    <a href="../../style.html">style</a>
+    <a href="../nodeSelected.html">nodeSelected</a>
+    <a href="customShape.html">customShape</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../../../full-reference/ItemsChartSettingsCustomShape.html">ItemsChartSettingsCustomShape</a>.</div>
+<div class="class-description"><p>Custom shape settings supplied, if display == "customShape"</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_distanceToEdge" class="property" data-property="style.nodeSelected.customShape.distanceToEdge">
+		    <div class="property-header"><span class="property-name">distanceToEdge</span>: (r: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, w: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, ddx: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, ddy: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>) =&gt; <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>When drawing links/arrows to the shape it may be desirable to determine the point where the arrow
+				reaches and touches the respective shape. Given the start point of the ray, this function should return
+				the distance to the outer border of the shape</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_distanceToEdge.r" class="property">
+							    <div class="property-header"><span class="property-name">r</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>radius</p>
+							    </div>
+							</div>
+							<div id="doc_distanceToEdge.w" class="property">
+							    <div class="property-header"><span class="property-name">w</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>width</p>
+							    </div>
+							</div>
+							<div id="doc_distanceToEdge.ddx" class="property">
+							    <div class="property-header"><span class="property-name">ddx</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>the ray towards shape</p>
+							    </div>
+							</div>
+							<div id="doc_distanceToEdge.ddy" class="property">
+							    <div class="property-header"><span class="property-name">ddy</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>the ray towards shape</p>
+							    </div>
+							</div>
+						</div>
+				<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+				<div class="nested-code" style="display: none;">
+					<div id="doc_distanceToEdge.$return" class="property">
+						    <div class="property-header">Data type: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+						    <div class="property-description">
+							<p>the distance from the shape center to the outer border of the shape</p>
+						    </div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_hitTest" class="property" data-property="style.nodeSelected.customShape.hitTest">
+		    <div class="property-header"><span class="property-name">hitTest</span>: (x: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, y: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, itemScale: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, prevBest: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>) =&gt; <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Function to test if hover action was over the respective shape. The function will be called in the context of the appropriate INode (i.e. "this"=INode).</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_hitTest.x" class="property">
+							    <div class="property-header"><span class="property-name">x</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>X coordinate of the hit test</p>
+							    </div>
+							</div>
+							<div id="doc_hitTest.y" class="property">
+							    <div class="property-header"><span class="property-name">y</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Y coordinate of the hit test</p>
+							    </div>
+							</div>
+							<div id="doc_hitTest.itemScale" class="property">
+							    <div class="property-header"><span class="property-name">itemScale</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Node scalign factor</p>
+							    </div>
+							</div>
+							<div id="doc_hitTest.prevBest" class="property">
+							    <div class="property-header"><span class="property-name">prevBest</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Previous closest distance.</p>
+							    </div>
+							</div>
+						</div>
+				<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+				<div class="nested-code" style="display: none;">
+					<div id="doc_hitTest.$return" class="property">
+						    <div class="property-header">Data type: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+						    <div class="property-description">
+						    </div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_onUpdate" class="property" data-property="style.nodeSelected.customShape.onUpdate">
+		    <div class="property-header"><span class="property-name">onUpdate</span>: (context: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a>, radius: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>) =&gt; {
+		        bounds: [<a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>];
+		        HWidth: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>;
+		        HHeight: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>;
+		        anchor?: [<a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>];
+		    }</div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Method performed on update (such as hover). The function will be called in the context of the appropriate INode (i.e. "this"=INode).</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onUpdate.context" class="property">
+							    <div class="property-header"><span class="property-name">context</span>: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a></div>
+							    <div class="property-description">
+								<p>The canvas on which the node will be rendered</p>
+							    </div>
+							</div>
+							<div id="doc_onUpdate.radius" class="property">
+							    <div class="property-header"><span class="property-name">radius</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>The node radius radius, also available as "this.radius"</p>
+							    </div>
+							</div>
+						</div>
+				<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+				<div class="nested-code" style="display: none;">
+					<div id="doc_onUpdate.$return" class="property">
+						    <div class="property-header">Data type: <a class="type-ref" href="../../../../../full-reference/anonymous type.html">anonymous type</a></div>
+						    <div class="property-description">
+							<h5 class="collapsible collapsed"><small>►</small> Properties</h5>
+								<div class="nested-code" style="display: none;">
+									<div class="nested-code properties">
+											<div id="doc_onUpdate.$return.bounds" class="property">
+											    <div class="property-header"><span class="property-name">bounds</span>: [<a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>]</div>
+											    <div class="property-description">
+												<p>Bounds of the node for the given radius. The values are [x0, y0, x1, y1] for the upper left and lower right corner respectively.</p>
+											    </div>
+											</div>
+											<div id="doc_onUpdate.$return.HWidth" class="property">
+											    <div class="property-header"><span class="property-name">HWidth</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+											    <div class="property-description">
+												<p>One half of the width of the node.</p>
+											    </div>
+											</div>
+											<div id="doc_onUpdate.$return.HHeight" class="property">
+											    <div class="property-header"><span class="property-name">HHeight</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+											    <div class="property-description">
+												<p>One half of the height of the node</p>
+											    </div>
+											</div>
+											<div id="doc_onUpdate.$return.anchor" class="property">
+											    <div class="property-header"><span class="property-name">anchor</span>: [<a class="type-ref" href="../../../../../full-reference/number.html">number</a>, <a class="type-ref" href="../../../../../full-reference/number.html">number</a>]</div>
+											    <div class="property-description">
+												<p>Optional. The anchor point [x,y] where the links will be attached. If not specified, the anchor points will be left at defaults.</p>
+											    </div>
+											</div>
+										</div>
+								</div>
+						    </div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_paint" class="property" data-property="style.nodeSelected.customShape.paint">
+		    <div class="property-header"><span class="property-name">paint</span>: (context: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a>, x: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, y: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, hWidth: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, hHeight: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, image: <a class="type-ref" href="../../../../../full-reference/HTMLCanvasElement.html">HTMLCanvasElement</a> | <a class="type-ref" href="../../../../../full-reference/HTMLImageElement.html">HTMLImageElement</a>, paintDetails: <a class="type-ref" href="../../../../../full-reference/boolean.html">boolean</a>) =&gt; <a class="type-ref" href="../../../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Function to render the custom shape in canvas 2d context. The function will be called in the context of the appropriate INode (i.e. "this"=INode).</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_paint.context" class="property">
+							    <div class="property-header"><span class="property-name">context</span>: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a></div>
+							    <div class="property-description">
+								<p>The canvas 2d rendering context for rendering</p>
+							    </div>
+							</div>
+							<div id="doc_paint.x" class="property">
+							    <div class="property-header"><span class="property-name">x</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>The X value of the center coordinate, where node needs to be rendered</p>
+							    </div>
+							</div>
+							<div id="doc_paint.y" class="property">
+							    <div class="property-header"><span class="property-name">y</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>The Y value of the center coordinate where the node needs to be rendered</p>
+							    </div>
+							</div>
+							<div id="doc_paint.hWidth" class="property">
+							    <div class="property-header"><span class="property-name">hWidth</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Half of the width of the node</p>
+							    </div>
+							</div>
+							<div id="doc_paint.hHeight" class="property">
+							    <div class="property-header"><span class="property-name">hHeight</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Half of the height of the node</p>
+							    </div>
+							</div>
+							<div id="doc_paint.image" class="property">
+							    <div class="property-header"><span class="property-name">image</span>: <a class="type-ref" href="../../../../../full-reference/HTMLCanvasElement.html">HTMLCanvasElement</a> | <a class="type-ref" href="../../../../../full-reference/HTMLImageElement.html">HTMLImageElement</a></div>
+							    <div class="property-description">
+								<p>Image of the node, if any.</p>
+							    </div>
+							</div>
+							<div id="doc_paint.paintDetails" class="property">
+							    <div class="property-header"><span class="property-name">paintDetails</span>: <a class="type-ref" href="../../../../../full-reference/boolean.html">boolean</a></div>
+							    <div class="property-description">
+								<p>Whether or not to paint details (image, label). When the node is zoomed out far enough, the details aren't painted.</p>
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_paintSelection" class="property" data-property="style.nodeSelected.customShape.paintSelection">
+		    <div class="property-header"><span class="property-name">paintSelection</span>: (context: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a>, x: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, y: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, hWidth: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>, hHeight: <a class="type-ref" href="../../../../../full-reference/number.html">number</a>) =&gt; <a class="type-ref" href="../../../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Function to render the selection shape for custom shape in canvas 2d context.
+				The function will be called in the context of the appropriate INode (i.e. "this"=INode).</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_paintSelection.context" class="property">
+							    <div class="property-header"><span class="property-name">context</span>: <a class="type-ref" href="../../../../../full-reference/CanvasRenderingContext2D.html">CanvasRenderingContext2D</a></div>
+							    <div class="property-description">
+								<p>The canvas 2d rendering context for rendering</p>
+							    </div>
+							</div>
+							<div id="doc_paintSelection.x" class="property">
+							    <div class="property-header"><span class="property-name">x</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>The X value of the center coordinate, where node needs to be rendered</p>
+							    </div>
+							</div>
+							<div id="doc_paintSelection.y" class="property">
+							    <div class="property-header"><span class="property-name">y</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>The Y value of the center coordinate where the node needs to be rendered</p>
+							    </div>
+							</div>
+							<div id="doc_paintSelection.hWidth" class="property">
+							    <div class="property-header"><span class="property-name">hWidth</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Half of the width of the node</p>
+							    </div>
+							</div>
+							<div id="doc_paintSelection.hHeight" class="property">
+							    <div class="property-header"><span class="property-name">hHeight</span>: <a class="type-ref" href="../../../../../full-reference/number.html">number</a></div>
+							    <div class="property-description">
+								<p>Half of the height of the node</p>
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+	</div>
+
+    

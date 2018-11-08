@@ -1,0 +1,103 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.linkMenu</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="linkMenu.html">linkMenu</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/ItemsChartSettingsLinkMenu.html">ItemsChartSettingsLinkMenu</a>.</div>
+<div class="class-description"><p>Configurable link menu with option to specify a range of displaying buttons.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_buttons" class="property" data-property="linkMenu.buttons">
+		    <div class="property-header"><span class="property-name">buttons</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../../full-reference/ItemsChartSettingsMenuButton.html">ItemsChartSettingsMenuButton</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../../full-reference/ItemsChartSettingsMenu.html">ItemsChartSettingsMenu</a></div>
+					<div>Introduced in version <strong>1.12.0</strong>.</div>
+				</div>
+		<h5><a href="linkMenu/buttons.html">View section details</a></h5>
+			<p>Custom buttons for the link menu</p>
+		    </div>
+		</div>
+		<div id="doc_contentsFunction" class="property" data-property="linkMenu.contentsFunction">
+		    <div class="property-header"><span class="property-name">contentsFunction</span>: (data: <a class="type-ref" href="../../../full-reference/ItemsChartDataObjectLink.html">ItemsChartDataObjectLink</a>, node: <a class="type-ref" href="../../../full-reference/ItemsChartLink.html">ItemsChartLink</a>, callback: (result: <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/HTMLElement.html">HTMLElement</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a>) =&gt; <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/HTMLElement.html">HTMLElement</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/ItemsChartSettingsMenu.html">ItemsChartSettingsMenu</a></div>
+					<div>Version <strong>1.9.0</strong>: added the ability to return <code>HTMLElement</code>.</div>
+				</div>
+			<p>Prepare html string or DOM element to include in the menu. Called whenever a menu is about to be shown.</p>
+				<p>If this callback is not defined, the menu will display the label of the element.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_contentsFunction.data" class="property">
+							    <div class="property-header"><span class="property-name">data</span>: <a class="type-ref" href="../../../full-reference/ItemsChartDataObjectLink.html">ItemsChartDataObjectLink</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+							<div id="doc_contentsFunction.node" class="property">
+							    <div class="property-header"><span class="property-name">node</span>: <a class="type-ref" href="../../../full-reference/ItemsChartLink.html">ItemsChartLink</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+							<div id="doc_contentsFunction.callback" class="property">
+							    <div class="property-header"><span class="property-name">callback</span>: (result: <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/HTMLElement.html">HTMLElement</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+							    <div class="property-description">
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_contentsFunction.callback.result" class="property">
+												    <div class="property-header"><span class="property-name">result</span>: <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/HTMLElement.html">HTMLElement</a></div>
+												    <div class="property-description">
+												    </div>
+												</div>
+											</div>
+							    </div>
+							</div>
+						</div>
+				<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+				<div class="nested-code" style="display: none;">
+					<div id="doc_contentsFunction.$return" class="property">
+						    <div class="property-header">Data type: <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/HTMLElement.html">HTMLElement</a></div>
+						    <div class="property-description">
+							<p>A HTML string or DOM element to include in the menu. Alternatively return null and call callback() later.</p>
+						    </div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_enabled" class="property" data-property="linkMenu.enabled">
+		    <div class="property-header"><span class="property-name">enabled</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/ItemsChartSettingsMenu.html">ItemsChartSettingsMenu</a></div>
+				</div>
+			<p>Show/hide node/link menu.</p>
+		    </div>
+		</div>
+		<div id="doc_showData" class="property" data-property="linkMenu.showData">
+		    <div class="property-header"><span class="property-name">showData</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/ItemsChartSettingsMenu.html">ItemsChartSettingsMenu</a></div>
+				</div>
+			<p>Whether to add a view data button to the menu. Useful for debugging.</p>
+		    </div>
+		</div>
+	</div>
+
+    

@@ -1,0 +1,194 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.toolbar</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="toolbar.html">toolbar</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/NetChartBarSettingsToolbar.html">NetChartBarSettingsToolbar</a>.</div>
+<div class="class-description"><p>Adjustable settings to manage default and custom toolbar items, as well as toolbar overall appearance.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_align" class="property" data-property="toolbar.align">
+		    <div class="property-header"><span class="property-name">align</span>: "left" | "right" | "top" | "bottom"</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">"left"</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Toolbar align. Note that it can be overridden for individual items using item.align. Also Use 'top' or 'bottom'
+				sides in conjunction with 'left', 'right' align or use 'left', 'right' sides with 'top', 'bottom'.</p>
+			Valid values:
+				<ul class="values">
+				    <li><span class="property-value">left</span>
+				    </li><li><span class="property-value">right</span>
+				    </li><li><span class="property-value">top</span>
+				    </li><li><span class="property-value">bottom</span>
+				</li></ul>
+		    </div>
+		</div>
+		<div id="doc_back" class="property" data-property="toolbar.back">
+		    <div class="property-header"><span class="property-name">back</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Whether to show back button in toolbar.</p>
+		    </div>
+		</div>
+		<div id="doc_cssClass" class="property" data-property="toolbar.cssClass">
+		    <div class="property-header"><span class="property-name">cssClass</span>: <a class="type-ref" href="../../../full-reference/string.html">string</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+					<div>Introduced in version <strong>1.11.6</strong>.</div>
+				</div>
+			<p>CSS class name for the toolbar HTML panel.</p>
+		    </div>
+		</div>
+		<div id="doc_enabled" class="property" data-property="toolbar.enabled">
+		    <div class="property-header"><span class="property-name">enabled</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Show/hide toolbar.</p>
+		    </div>
+		</div>
+		<div id="doc_export" class="property" data-property="toolbar.export">
+		    <div class="property-header"><span class="property-name">export</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Whether to show export dropdown in toolbar.</p>
+		    </div>
+		</div>
+		<div id="doc_exportOptions" class="property" data-property="toolbar.exportOptions">
+		    <div class="property-header"><span class="property-name">exportOptions</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;"png" | "jpg" | "pdf" | "csv" | "xlsx"&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+					<div>Introduced in version <strong>1.15.6</strong>.</div>
+				</div>
+			<p>Specifies what options will be provided for the user in the Export dropdown. Specifying <code>null</code> here
+				will enable all options.</p>
+				<p>Note that some charts do not support <code>XLSX</code> or <code>CSV</code> option so enabling it here will not have any effect.</p>
+				<p>Currently the order of the types given in this array are ignored.</p>
+		    </div>
+		</div>
+		<div id="doc_extraItems" class="property" data-property="toolbar.extraItems">
+		    <div class="property-header"><span class="property-name">extraItems</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/BaseSettingsToolbarItem.html">BaseSettingsToolbarItem</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>A list of user defined items to show in toolbar. These are displayed in addition to the
+				<code>items</code> collection (which includes the default buttons).</p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Example: <a href="../../../time-chart/examples/toolbar/custom-items.html">custom toolbar items</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_fullscreen" class="property" data-property="toolbar.fullscreen">
+		    <div class="property-header"><span class="property-name">fullscreen</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+					<div>Introduced in version <strong>1.16.0</strong>.</div>
+				</div>
+			<p>Whether to show the fullscreen button on the toolbar.</p>
+		    </div>
+		</div>
+		<div id="doc_items" class="property" data-property="toolbar.items">
+		    <div class="property-header"><span class="property-name">items</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../../full-reference/string.html">string</a> | <a class="type-ref" href="../../../full-reference/BaseSettingsToolbarItem.html">BaseSettingsToolbarItem</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>A list of toolbar items. If this is specified, it overrides all the default buttons.</p>
+				<p>Use <code>extraItems</code> to specify items that should be displayed in addition to the defaults.</p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Example: <a href="../../../time-chart/examples/toolbar/custom-items.html">custom toolbar items</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_location" class="property" data-property="toolbar.location">
+		    <div class="property-header"><span class="property-name">location</span>: "inside" | "outside"</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">"inside"</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Toolbar location inside chart.</p>
+			Valid values:
+				<ul class="values">
+				    <li><span class="property-value">inside</span> - Inside chart area
+				    </li><li><span class="property-value">outside</span> - Outside of chart area
+				</li></ul>
+		    </div>
+		</div>
+		<div id="doc_showLabels" class="property" data-property="toolbar.showLabels">
+		    <div class="property-header"><span class="property-name">showLabels</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Whether to show or hide labels next to toolbar items by default. Note that it can be overridden for individual items using item.showLabels.</p>
+		    </div>
+		</div>
+		<div id="doc_side" class="property" data-property="toolbar.side">
+		    <div class="property-header"><span class="property-name">side</span>: "left" | "right" | "top" | "bottom"</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">"bottom"</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Toolbar placement side. Note that it can be overridden for individual items using item.side.</p>
+			Valid values:
+				<ul class="values">
+				    <li><span class="property-value">left</span>
+				    </li><li><span class="property-value">right</span>
+				    </li><li><span class="property-value">top</span>
+				    </li><li><span class="property-value">bottom</span>
+				</li></ul>
+		    </div>
+		</div>
+		<div id="doc_zoomControl" class="property" data-property="toolbar.zoomControl">
+		    <div class="property-header"><span class="property-name">zoomControl</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>	<div>Introduced in version <strong>1.9.0</strong>.</div>
+				</div>
+			<p>Whether to show the zoom slider control.</p>
+		    </div>
+		</div>
+		<div id="doc_zoomOut" class="property" data-property="toolbar.zoomOut">
+		    <div class="property-header"><span class="property-name">zoomOut</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsToolbar.html">BaseSettingsToolbar</a></div>
+				</div>
+			<p>Whether to show the zoom out button.</p>
+		    </div>
+		</div>
+	</div>
+
+    

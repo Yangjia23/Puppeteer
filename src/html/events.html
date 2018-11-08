@@ -1,0 +1,383 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.events</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="events.html">events</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/NetChartSettingsEvents.html">NetChartSettingsEvents</a>.</div>
+<div class="class-description"><p>The events used to handle user interaction with UI elements.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_chartUpdateDelay" class="property" data-property="events.chartUpdateDelay">
+		    <div class="property-header"><span class="property-name">chartUpdateDelay</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">0</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called on pointer down.
+				Function called on pointer up.
+				Function called when pointer drag has happened.
+				Function called when mouse pointer is moved.
+				Function called when data is loaded/added/replaced/removed.
+				Time to wait after last action before firing onChartUpdate event.</p>
+		    </div>
+		</div>
+		<div id="doc_onChartUpdate" class="property" data-property="events.onChartUpdate">
+		    <div class="property-header"><span class="property-name">onChartUpdate</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when whenever current view has changed. Usually after panning and navigation. Use to update any linked views.
+				Note that this is also fired after chart initialization and API methods. Use args.origin field to determine event's origin.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onChartUpdate.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>An empty mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onChartUpdate.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onClick" class="property" data-property="events.onClick">
+		    <div class="property-header"><span class="property-name">onClick</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when user clicks on chart.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onClick.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onClick.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onDataUpdated" class="property" data-property="events.onDataUpdated">
+		    <div class="property-header"><span class="property-name">onDataUpdated</span>: (event: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Function called when data is loaded/added/replaced/removed.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onDataUpdated.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a></div>
+							    <div class="property-description">
+								<p>An empty mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onDataUpdated.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onDoubleClick" class="property" data-property="events.onDoubleClick">
+		    <div class="property-header"><span class="property-name">onDoubleClick</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when user double clicks on chart.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onDoubleClick.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onDoubleClick.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onError" class="property" data-property="events.onError">
+		    <div class="property-header"><span class="property-name">onError</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/BaseChartErrorEventArguments.html">BaseChartErrorEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when error occurs, default behavior is log to console.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onError.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event that was the cause of the error.</p>
+							    </div>
+							</div>
+							<div id="doc_onError.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/BaseChartErrorEventArguments.html">BaseChartErrorEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onHoverChange" class="property" data-property="events.onHoverChange">
+		    <div class="property-header"><span class="property-name">onHoverChange</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when object pointer is on changes.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onHoverChange.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onHoverChange.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onPointerDown" class="property" data-property="events.onPointerDown">
+		    <div class="property-header"><span class="property-name">onPointerDown</span>: (event: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onPointerDown.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onPointerDown.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onPointerDrag" class="property" data-property="events.onPointerDrag">
+		    <div class="property-header"><span class="property-name">onPointerDrag</span>: (event: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Function called when pointer drag has happened.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onPointerDrag.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onPointerDrag.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onPointerMove" class="property" data-property="events.onPointerMove">
+		    <div class="property-header"><span class="property-name">onPointerMove</span>: (event: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Function called when mouse pointer is moved.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onPointerMove.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onPointerMove.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onPointerUp" class="property" data-property="events.onPointerUp">
+		    <div class="property-header"><span class="property-name">onPointerUp</span>: (event: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Function called on pointer up.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onPointerUp.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/MouseEvent.html">MouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onPointerUp.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onPositionChange" class="property" data-property="events.onPositionChange">
+		    <div class="property-header"><span class="property-name">onPositionChange</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called whenever chart placement on screen changes. Note that this is called on every animation frame and is intended
+				for painting overlays only.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onPositionChange.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event that caused the event (if any)</p>
+							    </div>
+							</div>
+							<div id="doc_onPositionChange.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onRightClick" class="property" data-property="events.onRightClick">
+		    <div class="property-header"><span class="property-name">onRightClick</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when user right clicks on chart.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onRightClick.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onRightClick.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onSelectionChange" class="property" data-property="events.onSelectionChange">
+		    <div class="property-header"><span class="property-name">onSelectionChange</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when selected slices has changed.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onSelectionChange.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onSelectionChange.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartEventArguments.html">NetChartChartEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onSettingsChange" class="property" data-property="events.onSettingsChange">
+		    <div class="property-header"><span class="property-name">onSettingsChange</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/BaseChartSettingsChangeEventArguments.html">BaseChartSettingsChangeEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when settings are changed.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onSettingsChange.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>An empty mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onSettingsChange.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/BaseChartSettingsChangeEventArguments.html">BaseChartSettingsChangeEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+		<div id="doc_onTripleClick" class="property" data-property="events.onTripleClick">
+		    <div class="property-header"><span class="property-name">onTripleClick</span>: (event: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a>, args: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a>) =&gt; <a class="type-ref" href="../../../full-reference/void.html">void</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../../full-reference/BaseSettingsEvents.html">BaseSettingsEvents</a></div>
+				</div>
+			<p>Function called when user triple clicks on chart. Use it for custom function call.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+					<div class="nested-code" style="display: none;">
+							<div id="doc_onTripleClick.event" class="property">
+							    <div class="property-header"><span class="property-name">event</span>: <a class="type-ref" href="../../../full-reference/BaseMouseEvent.html">BaseMouseEvent</a></div>
+							    <div class="property-description">
+								<p>The mouse event.</p>
+							    </div>
+							</div>
+							<div id="doc_onTripleClick.args" class="property">
+							    <div class="property-header"><span class="property-name">args</span>: <a class="type-ref" href="../../../full-reference/NetChartChartClickEventArguments.html">NetChartChartClickEventArguments</a></div>
+							    <div class="property-description">
+							    </div>
+							</div>
+						</div>
+		    </div>
+		</div>
+	</div>
+
+    

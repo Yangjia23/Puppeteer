@@ -1,0 +1,17 @@
+{
+  "name": "puppeteerdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "puppeteer": "^1.9.0",
+    "puppeteer-cn": "^0.1.7",
+    "rimraf": "^2.6.2"
+  }
+}

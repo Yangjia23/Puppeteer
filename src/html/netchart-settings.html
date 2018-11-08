@@ -1,0 +1,552 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="settings.html">NetChart Settings</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../full-reference/NetChartSettings.html">NetChartSettings</a>.</div>
+<div class="class-description"></div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_advanced" class="property" data-property="advanced">
+		    <div class="property-header"><span class="property-name">advanced</span>: <a class="type-ref" href="../../full-reference/ItemsChartSettingsAdvanced.html">ItemsChartSettingsAdvanced</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/advanced.html">View section details</a></h5>
+		    </div>
+		</div>
+		<div id="doc_area" class="property" data-property="area">
+		    <div class="property-header"><span class="property-name">area</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsArea.html">NetChartSettingsArea</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/area.html">View section details</a></h5>
+			<p>Chart area related settings.</p>
+		    </div>
+		</div>
+		<div id="doc_assetsUrlBase" class="property" data-property="assetsUrlBase">
+		    <div class="property-header"><span class="property-name">assetsUrlBase</span>: <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">""</span></div>    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+			<p>The URL root where the ZoomCharts library and assets are located. For example, if the base.css file is available at
+				'http://server/css/zoomcharts/zc.css' then this value should be set to 'http://server/css/zoomcharts/'.
+				Note that the library will try to determine its location automatically by searching the included script tags.
+				So this property can be skipped if the assets folder is located next to 'zoomcharts.js' file on the server.</p>
+		    </div>
+		</div>
+		<div id="doc_auras" class="property" data-property="auras">
+		    <div class="property-header"><span class="property-name">auras</span>: <a class="type-ref" href="../../full-reference/ItemsChartSettingsNodesLayerAuras.html">ItemsChartSettingsNodesLayerAuras</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+					<div>Introduced in version <strong>1.15.0</strong>.</div>
+				</div>
+		<h5><a href="settings/auras.html">View section details</a></h5>
+			<p>Contains settings for the auras drawn beneath the nodes.</p>
+		    </div>
+		</div>
+		<div id="doc_container" class="property" data-property="container">
+		    <div class="property-header"><span class="property-name">container</span>: <a class="type-ref" href="../../full-reference/string.html">string</a> | <a class="type-ref" href="../../full-reference/HTMLElement.html">HTMLElement</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+			<p>Element of the page where the chart will be inserted. Any HTML element should work, for example you can use a <code>&lt;div&gt;</code>.</p>
+				<p>Any contents of the element will be cleared - this behavior can be used to specify a loading message as the initial content,
+				for example <code>&lt;div&gt;Chart is being initialized...&lt;/div&gt;</code>.</p>
+				<p>Note that a single element can host only one chart. If the same container is given to another chart, the previous chart will
+				be automatically disposed.</p>
+				<p>Unless <code>parentChart</code> is specified, the value of the property is mandatory and can only be specified while creating the chart,
+				not with <code>updateSettings</code>. The value can be either an ID of an existing element or a reference to a DOM element.</p>
+		    </div>
+		</div>
+		<div id="doc_credits" class="property" data-property="credits">
+		    <div class="property-header"><span class="property-name">credits</span>: <a class="type-ref" href="../../full-reference/BaseSettingsCredits.html">BaseSettingsCredits</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/credits.html">View section details</a></h5>
+			<p>Settings for displaying chart credits. Use it as a reference to additional data sources if necessery.</p>
+				<p><img src="../../images/settings-credits.png" alt="Chart including credits"></p>
+				<p>Note that even if credits enabled on page load, it's possible to hide on exported images.</p>
+		    </div>
+		</div>
+		<div id="doc_data" class="property" data-property="data">
+		    <div class="property-header"><span class="property-name">data</span>: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartSettingsData.html">NetChartSettingsData</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">[
+				  {
+				    "id": "default",
+				    "url": null,
+				    "urlParameters": [],
+				    "postprocessorFunction": null,
+				    "preloaded": null,
+				    "format": "JSON",
+				    "requestTimeout": 40000,
+				    "numberOfParallelRequests": 3,
+				    "cacheSize": 10000,
+				    "random": null,
+				    "randomGridLinkProbability": 0.6,
+				    "randomNodes": 0,
+				    "randomLinks": 0,
+				    "randomTreeDensity": 3,
+				    "requestMaxUnits": 2,
+				    "dataFunction": null
+				  }
+				]</span></div>    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/data.html">View section details</a></h5>
+			<p>Settings used to load data into chart. Customise preferred data source feeding methods.
+				You can use one of these options: url, data function, preloaded data.</p>
+		    </div>
+		</div>
+		<div id="doc_events" class="property" data-property="events">
+		    <div class="property-header"><span class="property-name">events</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsEvents.html">NetChartSettingsEvents</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/events.html">View section details</a></h5>
+			<p>The events used to handle user interaction with UI elements.</p>
+		    </div>
+		</div>
+		<div id="doc_filters" class="property" data-property="filters">
+		    <div class="property-header"><span class="property-name">filters</span>: <a class="type-ref" href="../../full-reference/anonymous type.html">anonymous type</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+			<p>Configurable conditions to filter the raw data values for subset of drawing nodes and links.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Properties</h5>
+				<div class="nested-code" style="display: none;">
+					<div class="nested-code properties">
+							<div id="doc_filters.linkFilter" class="property" data-property="filters.linkFilter">
+							    <div class="property-header"><span class="property-name">linkFilter</span>: (linkData: <a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>, fromNodeData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>, toNodeData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>) =&gt; <a class="type-ref" href="../../full-reference/boolean.html">boolean</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>Determine if link can be displayed. Invoked whenever a link is about to be shown or its data has changed.
+									Only links that have been allowed by nodeFilter for both end nodes will be passed here.</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_filters.linkFilter.linkData" class="property">
+												    <div class="property-header"><span class="property-name">linkData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a></div>
+												    <div class="property-description">
+													<p>link data object</p>
+												    </div>
+												</div>
+												<div id="doc_filters.linkFilter.fromNodeData" class="property">
+												    <div class="property-header"><span class="property-name">fromNodeData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>data object representing node where the link begins</p>
+												    </div>
+												</div>
+												<div id="doc_filters.linkFilter.toNodeData" class="property">
+												    <div class="property-header"><span class="property-name">toNodeData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>data object representing node where the link ends</p>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_filters.linkFilter.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/boolean.html">boolean</a></div>
+											    <div class="property-description">
+												<p>true if the link should be shown, false otherwise</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+							<div id="doc_filters.multilinkProcessor" class="property" data-property="filters.multilinkProcessor">
+							    <div class="property-header"><span class="property-name">multilinkProcessor</span>: (arrayOfLinkData: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;, fromData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>, toData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>) =&gt; <a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a> | <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>Function called whenever there is more than one link between two nodes. Only links that were allowed by nodeFilter, linkFilter and nodeLinksProcessor
+									will be passed here. The function can return either some of the original links, or create completely new links.
+									In the latter case, link IDs MUST be unique (links passed in are guaranteed to have unique IDs).</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_filters.multilinkProcessor.arrayOfLinkData" class="property">
+												    <div class="property-header"><span class="property-name">arrayOfLinkData</span>: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+												    <div class="property-description">
+													<p>array of link data objects</p>
+												    </div>
+												</div>
+												<div id="doc_filters.multilinkProcessor.fromData" class="property">
+												    <div class="property-header"><span class="property-name">fromData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>data object representing node where the links begins</p>
+												    </div>
+												</div>
+												<div id="doc_filters.multilinkProcessor.toData" class="property">
+												    <div class="property-header"><span class="property-name">toData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>data object representing node where the links ends</p>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_filters.multilinkProcessor.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a> | <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+											    <div class="property-description">
+												<p>One or more links to be used in place of the original links</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+							<div id="doc_filters.nodeFilter" class="property" data-property="filters.nodeFilter">
+							    <div class="property-header"><span class="property-name">nodeFilter</span>: (nodeData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>, arrayOfLinkData: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;) =&gt; <a class="type-ref" href="../../full-reference/boolean.html">boolean</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>Determine if node can be displayed. Invoked whenever a node or one of its links is about to be shown, or if data for the node (or its links) has changed.</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_filters.nodeFilter.nodeData" class="property">
+												    <div class="property-header"><span class="property-name">nodeData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>Node data object</p>
+												    </div>
+												</div>
+												<div id="doc_filters.nodeFilter.arrayOfLinkData" class="property">
+												    <div class="property-header"><span class="property-name">arrayOfLinkData</span>: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+												    <div class="property-description">
+													<p>Unfiltered array of link data objects (linkFilter/nodeLinksProcessor/multilinkProcessor have not been applied)</p>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_filters.nodeFilter.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/boolean.html">boolean</a></div>
+											    <div class="property-description">
+												<p>true if the node should be shown, false otherwise</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+							<div id="doc_filters.nodeLinksProcessor" class="property" data-property="filters.nodeLinksProcessor">
+							    <div class="property-header"><span class="property-name">nodeLinksProcessor</span>: (nodeData: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a>, links: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;) =&gt; <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>From links that were allowed by nodeFilter and linkFilter, select the ones that will be displayed. This is basically a bulk version of linkFilter.
+									It is also allowed to return a completely new set of links, however link IDs MUST be unique in this case
+									(links passed in are guaranteed to have unique IDs).</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_filters.nodeLinksProcessor.nodeData" class="property">
+												    <div class="property-header"><span class="property-name">nodeData</span>: <a class="type-ref" href="../../full-reference/NetChartDataObjectNode.html">NetChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>Node data object</p>
+												    </div>
+												</div>
+												<div id="doc_filters.nodeLinksProcessor.links" class="property">
+												    <div class="property-header"><span class="property-name">links</span>: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+												    <div class="property-description">
+													<p>Array of link data objects. All links are connected to the node. Only links that were allowed by nodeFilter/linkFilter will be passed here.
+														MultilinkProcessor has not been applied yet.</p>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_filters.nodeLinksProcessor.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../full-reference/NetChartDataObjectLink.html">NetChartDataObjectLink</a>&gt;</div>
+											    <div class="property-description">
+												<p>Array of links to show.</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_info" class="property" data-property="info">
+		    <div class="property-header"><span class="property-name">info</span>: <a class="type-ref" href="../../full-reference/anonymous type.html">anonymous type</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/ItemsChartSettings.html">ItemsChartSettings</a></div>
+				</div>
+			<p>Info popup for item - meaning links or nodes - with configurable content rendered.</p>
+			<h5 class="collapsible collapsed"><small>►</small> Properties</h5>
+				<div class="nested-code" style="display: none;">
+					<div class="nested-code properties">
+							<div id="doc_info.enabled" class="property" data-property="info.enabled">
+							    <div class="property-header"><span class="property-name">enabled</span>: <a class="type-ref" href="../../full-reference/boolean.html">boolean</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">false</span></div></div>
+								<p>Show/hide info popup</p>
+							    </div>
+							</div>
+							<div id="doc_info.linkContentsFunction" class="property" data-property="info.linkContentsFunction">
+							    <div class="property-header"><span class="property-name">linkContentsFunction</span>: (linkData: <a class="type-ref" href="../../full-reference/ItemsChartDataObjectLink.html">ItemsChartDataObjectLink</a>, link: <a class="type-ref" href="../../full-reference/ItemsChartLink.html">ItemsChartLink</a>, asyncCallback: (contents: <a class="type-ref" href="../../full-reference/string.html">string</a>) =&gt; <a class="type-ref" href="../../full-reference/void.html">void</a>) =&gt; <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>Returns html string to display in passed links info popup.</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_info.linkContentsFunction.linkData" class="property">
+												    <div class="property-header"><span class="property-name">linkData</span>: <a class="type-ref" href="../../full-reference/ItemsChartDataObjectLink.html">ItemsChartDataObjectLink</a></div>
+												    <div class="property-description">
+													<p>link data</p>
+												    </div>
+												</div>
+												<div id="doc_info.linkContentsFunction.link" class="property">
+												    <div class="property-header"><span class="property-name">link</span>: <a class="type-ref" href="../../full-reference/ItemsChartLink.html">ItemsChartLink</a></div>
+												    <div class="property-description">
+													<p>link object</p>
+												    </div>
+												</div>
+												<div id="doc_info.linkContentsFunction.asyncCallback" class="property">
+												    <div class="property-header"><span class="property-name">asyncCallback</span>: (contents: <a class="type-ref" href="../../full-reference/string.html">string</a>) =&gt; <a class="type-ref" href="../../full-reference/void.html">void</a></div>
+												    <div class="property-description">
+													<p>callback function</p>
+													<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+															<div class="nested-code" style="display: none;">
+																	<div id="doc_info.linkContentsFunction.asyncCallback.contents" class="property">
+																	    <div class="property-header"><span class="property-name">contents</span>: <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+																	    <div class="property-description">
+																	    </div>
+																	</div>
+																</div>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_info.linkContentsFunction.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+											    <div class="property-description">
+												<p>a HTML string to display in info popup.</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+							<div id="doc_info.nodeContentsFunction" class="property" data-property="info.nodeContentsFunction">
+							    <div class="property-header"><span class="property-name">nodeContentsFunction</span>: (nodeData: <a class="type-ref" href="../../full-reference/ItemsChartDataObjectNode.html">ItemsChartDataObjectNode</a>, node: <a class="type-ref" href="../../full-reference/ItemsChartNode.html">ItemsChartNode</a>, callback: (contents: <a class="type-ref" href="../../full-reference/string.html">string</a>) =&gt; <a class="type-ref" href="../../full-reference/void.html">void</a>) =&gt; <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+							    <div class="property-description">
+								<div class="property-info">
+									<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+								<p>Returns html string to display in passed nodes info popup.</p>
+								<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+										<div class="nested-code" style="display: none;">
+												<div id="doc_info.nodeContentsFunction.nodeData" class="property">
+												    <div class="property-header"><span class="property-name">nodeData</span>: <a class="type-ref" href="../../full-reference/ItemsChartDataObjectNode.html">ItemsChartDataObjectNode</a></div>
+												    <div class="property-description">
+													<p>node data</p>
+												    </div>
+												</div>
+												<div id="doc_info.nodeContentsFunction.node" class="property">
+												    <div class="property-header"><span class="property-name">node</span>: <a class="type-ref" href="../../full-reference/ItemsChartNode.html">ItemsChartNode</a></div>
+												    <div class="property-description">
+													<p>node object</p>
+												    </div>
+												</div>
+												<div id="doc_info.nodeContentsFunction.callback" class="property">
+												    <div class="property-header"><span class="property-name">callback</span>: (contents: <a class="type-ref" href="../../full-reference/string.html">string</a>) =&gt; <a class="type-ref" href="../../full-reference/void.html">void</a></div>
+												    <div class="property-description">
+													<p>callback function</p>
+													<h5 class="collapsible collapsed"><small>►</small> Parameters</h5>
+															<div class="nested-code" style="display: none;">
+																	<div id="doc_info.nodeContentsFunction.callback.contents" class="property">
+																	    <div class="property-header"><span class="property-name">contents</span>: <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+																	    <div class="property-description">
+																	    </div>
+																	</div>
+																</div>
+												    </div>
+												</div>
+											</div>
+									<h5 class="collapsible collapsed"><small>►</small> Return value</h5>
+									<div class="nested-code" style="display: none;">
+										<div id="doc_info.nodeContentsFunction.$return" class="property">
+											    <div class="property-header">Data type: <a class="type-ref" href="../../full-reference/string.html">string</a></div>
+											    <div class="property-description">
+												<p>a HTML string to display in info popup.</p>
+											    </div>
+											</div>
+									</div>
+							    </div>
+							</div>
+						</div>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_interaction" class="property" data-property="interaction">
+		    <div class="property-header"><span class="property-name">interaction</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsInteraction.html">NetChartSettingsInteraction</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/interaction.html">View section details</a></h5>
+			<p>Customise chart resize handles or animation duration settings.</p>
+		    </div>
+		</div>
+		<div id="doc_layout" class="property" data-property="layout">
+		    <div class="property-header"><span class="property-name">layout</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsLayout.html">NetChartSettingsLayout</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+		<h5><a href="settings/layout.html">View section details</a></h5>
+			<p>Adjustable settings to get desired net chart layout style and animation while and before interacting.</p>
+		    </div>
+		</div>
+		<div id="doc_legend" class="property" data-property="legend">
+		    <div class="property-header"><span class="property-name">legend</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsLegend.html">NetChartSettingsLegend</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/legend.html">View section details</a></h5>
+			<p>The chart legend representing classes attached to nodes or links.
+				The legend will display the visual styles specified in <code>style.nodeClasses</code> and <code>style.linkClasses</code> - by default these are not defined
+				so the legend will be empty.</p>
+		    </div>
+		</div>
+		<div id="doc_linkMenu" class="property" data-property="linkMenu">
+		    <div class="property-header"><span class="property-name">linkMenu</span>: <a class="type-ref" href="../../full-reference/ItemsChartSettingsLinkMenu.html">ItemsChartSettingsLinkMenu</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/ItemsChartSettings.html">ItemsChartSettings</a></div>
+				</div>
+		<h5><a href="settings/linkMenu.html">View section details</a></h5>
+			<p>Configurable link menu with option to specify a range of displaying buttons.</p>
+		    </div>
+		</div>
+		<div id="doc_localization" class="property" data-property="localization">
+		    <div class="property-header"><span class="property-name">localization</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsLocalization.html">NetChartSettingsLocalization</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/localization.html">View section details</a></h5>
+			<p>Localizeable strings including export type options and useful default buttons used for chart interaction.
+				Buttons like to navigate back, set the chart on full screen and others.</p>
+		    </div>
+		</div>
+		<div id="doc_navigation" class="property" data-property="navigation">
+		    <div class="property-header"><span class="property-name">navigation</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsNavigation.html">NetChartSettingsNavigation</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+		<h5><a href="settings/navigation.html">View section details</a></h5>
+			<p>Settings for NetChart navigation (expanding/collapsing/focusing/unfocusing/showing/hiding). The main setting is "mode" which determines the overall
+				algorithm for navigation. Other parameters can tweak this algorithm, but not all parameters apply to all algorithms.</p>
+		    </div>
+		</div>
+		<div id="doc_nodeMenu" class="property" data-property="nodeMenu">
+		    <div class="property-header"><span class="property-name">nodeMenu</span>: <a class="type-ref" href="../../full-reference/ItemsChartSettingsNodeMenu.html">ItemsChartSettingsNodeMenu</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/ItemsChartSettings.html">ItemsChartSettings</a></div>
+				</div>
+		<h5><a href="settings/nodeMenu.html">View section details</a></h5>
+			<p>Configurable node menu with option to specify a range of displaying buttons.</p>
+		    </div>
+		</div>
+		<div id="doc_parentChart" class="property" data-property="parentChart">
+		    <div class="property-header"><span class="property-name">parentChart</span>: <a class="type-ref" href="../../full-reference/BaseApi.html">BaseApi</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+			<p>The parent chart within which the new chart will be rendered. If this property is specified, <code>container</code> cannot be
+				specified.</p>
+				<p>Use <code>area.left</code>, <code>area.top</code>, <code>area.width</code> and <code>area.height</code> settings to position the subchart within parent chart.</p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Example: <a href="../examples/gallery/network-graph-piechart-on-netchart.html">PieChart within a NetChart</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_style" class="property" data-property="style">
+		    <div class="property-header"><span class="property-name">style</span>: <a class="type-ref" href="../../full-reference/NetChartSettingsStyle.html">NetChartSettingsStyle</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/ItemsChartSettings.html">ItemsChartSettings</a></div>
+				</div>
+		<h5><a href="settings/style.html">View section details</a></h5>
+			<p>Chart style settings.</p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Documentation: <a href="../introductory-topics/style.html">NetChart style settings</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_theme" class="property" data-property="theme">
+		    <div class="property-header"><span class="property-name">theme</span>: <a class="type-ref" href="../../full-reference/NetChartSettings.html">NetChartSettings</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">{
+				  "advanced": {
+				    "themeCSSClass": "DVSL-flat"
+				  }
+				}</span></div>    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+			<p>Theme to apply. You can either use this to share configuration objects between multiple charts or use one of the predefined
+				themes.</p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Documentation: <a href="api.html#doc_themes">Pre-defined themes</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_title" class="property" data-property="title">
+		    <div class="property-header"><span class="property-name">title</span>: <a class="type-ref" href="../../full-reference/BaseSettingsTitle.html">BaseSettingsTitle</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/title.html">View section details</a></h5>
+			<p>The chart's main title.</p>
+		    </div>
+		</div>
+		<div id="doc_toolbar" class="property" data-property="toolbar">
+		    <div class="property-header"><span class="property-name">toolbar</span>: <a class="type-ref" href="../../full-reference/NetChartBarSettingsToolbar.html">NetChartBarSettingsToolbar</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				    <div>Inherited from: <a class="type-ref" href="../../full-reference/BaseSettings.html">BaseSettings</a></div>
+				</div>
+		<h5><a href="settings/toolbar.html">View section details</a></h5>
+			<p>Adjustable settings to manage default and custom toolbar items, as well as toolbar overall appearance.</p>
+		    </div>
+		</div>
+	</div>
+
+    

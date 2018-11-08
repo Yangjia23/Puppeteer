@@ -1,0 +1,166 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.navigation</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="navigation.html">navigation</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/NetChartSettingsNavigation.html">NetChartSettingsNavigation</a>.</div>
+<div class="class-description"><p>Settings for NetChart navigation (expanding/collapsing/focusing/unfocusing/showing/hiding). The main setting is "mode" which determines the overall
+algorithm for navigation. Other parameters can tweak this algorithm, but not all parameters apply to all algorithms.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_autoUnfocus" class="property" data-property="navigation.autoUnfocus">
+		    <div class="property-header"><span class="property-name">autoUnfocus</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div>	<div>Introduced in version <strong>1.10.0</strong>.</div>
+				</div>
+			<p>Determines what happens if the user has reached maximum number of focus nodes (<code>numberOfFocusNodes</code>) and focuses another node.
+				In focusnode mode, if this setting is <code>true</code>, then the least recently focused node will be unfocused; if this setting is <code>false</code>,
+				then the userwill not be able to focus the node.
+				In manual and showall modes, numberOfFocusNodes is not taken into account. If <code>true</code> then by focusing a different node,
+				the previous becomes unfocused. If 'false' then previous nodes remain focused.
+				<em>Used by modes: all modes</em></p>
+		    </div>
+		</div>
+		<div id="doc_autoZoomOnFocus" class="property" data-property="navigation.autoZoomOnFocus">
+		    <div class="property-header"><span class="property-name">autoZoomOnFocus</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div></div>
+			<p>Whether to auto-zoom to a node when it is focused. <em>Used by modes: all modes</em></p>
+		    </div>
+		</div>
+		<div id="doc_expandDelay" class="property" data-property="navigation.expandDelay">
+		    <div class="property-header"><span class="property-name">expandDelay</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">0</span></div></div>
+			<p>If focusing a node would display several levels of nodes (due to <code>focusNodeExpansionRadius</code> or <code>focusNodeTailExpansionRadius</code>), each level is shown after
+				the specified delay (milliseconds). Set to 0 to disable. <em>Used by modes: <code>focusnodes</code></em></p>
+		    </div>
+		</div>
+		<div id="doc_expandOnClick" class="property" data-property="navigation.expandOnClick">
+		    <div class="property-header"><span class="property-name">expandOnClick</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div></div>
+			<p>Whether to expand node on click. <em>Used by modes: all modes</em></p>
+		    </div>
+		</div>
+		<div id="doc_focusAutoFadeout" class="property" data-property="navigation.focusAutoFadeout">
+		    <div class="property-header"><span class="property-name">focusAutoFadeout</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div>	<div>Introduced in version <strong>1.10.0</strong>.</div>
+				</div>
+			<p>If set to true, nodes and links with <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">relevance</a> &lt; 1 will be drawn with a smaller radius and a faded out
+				color (both multiplied by <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">relevance</a>). <em>Used by modes: <code>focusnodes</code></em></p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Documentation: <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">ItemsChartNode.relevance</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_focusNodeExpansionRadius" class="property" data-property="navigation.focusNodeExpansionRadius">
+		    <div class="property-header"><span class="property-name">focusNodeExpansionRadius</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">2</span></div></div>
+			<p>Number of "levels" to automatically expand around the most recently focused node. If set to 1, all nodes directly linked to the focused node will be shown.
+				If set to 2, all nodes directly connected to these nodes will be shown as well. Etc. Also used for calculating
+				<a href="../../../full-reference/ItemsChartNode.html#doc_relevance">node relevance</a>. <em>Used by modes: <code>focusnodes</code></em></p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Documentation: <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">ItemsChartNode.relevance</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_focusNodeTailExpansionRadius" class="property" data-property="navigation.focusNodeTailExpansionRadius">
+		    <div class="property-header"><span class="property-name">focusNodeTailExpansionRadius</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div>	<div>Version <strong>1.10.0</strong>: the default value changed from <code>0.3</code> to <code>2</code>.</div>
+					<div>Version <strong>1.11.4</strong>: the default value changed from <code>2</code> to <code>null</code> which means "the same as <code>focusNodeExpansionRadius</code>.</div>
+				</div>
+			<p>Similar to <code>focusNodeExpansionRadius</code>, but for the least recently focused node. This allows to create an effect, where the most recently focused node has
+				many expanded nodes around it, while the least recently node has only a few (or vice versa). Intermediate focused nodes will have their expansion radius
+				linearly interpolated between <code>focusNodeExpansionRadius</code> and <code>focusNodeTailExpansionRadius</code>. Also used to calculate
+				<a href="../../../full-reference/ItemsChartNode.html#doc_relevance">node relevance</a>. <em>Used by modes: <code>focusnodes</code></em></p>
+			<h5>See also</h5>
+				<div class="nested-code">
+					<ul>
+					    <li>Documentation: <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">ItemsChartNode.relevance</a></li>
+					</ul>
+				</div>
+		    </div>
+		</div>
+		<div id="doc_initialNodes" class="property" data-property="navigation.initialNodes">
+		    <div class="property-header"><span class="property-name">initialNodes</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../../full-reference/string.html">string</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">null</span></div></div>
+			<p>Initially visible/focused nodes. Array of node identifiers. The precise effect depends on the navigation mode.</p>
+				<ul>
+				<li>For <code>manual</code> this specifies the initially visible nodes and must contain at least 1 node.</li>
+				<li>For <code>showall</code> this specifies which nodes to show first, and other nodes are then requested recursively from these until all nodes are visible.</li>
+				<li>If this setting is left empty or <code>null</code>, the chart will directly request ALL nodes (this is more efficient if your data source supports it).</li>
+				<li>For <code>focusnodes</code> this specifies the initially focused nodes. The count of node IDs in this array must be between <code>minNumberOfFocusNodes</code> and
+				<code>numberOfFocusNodes</code></li>
+				</ul>
+				<p><em>Used by modes: all modes</em></p>
+		    </div>
+		</div>
+		<div id="doc_minNumberOfFocusNodes" class="property" data-property="navigation.minNumberOfFocusNodes">
+		    <div class="property-header"><span class="property-name">minNumberOfFocusNodes</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">1</span></div></div>
+			<p>Minimum number of focused nodes. Prevents user from unfocusing nodes if there are <code>minNumberOfFocusNodes</code> or less nodes focused.
+				If the <code>focusnodes</code> navigation is used, this setting has a minimum value of 1. <em>Used by modes: all modes</em></p>
+		    </div>
+		</div>
+		<div id="doc_mode" class="property" data-property="navigation.mode">
+		    <div class="property-header"><span class="property-name">mode</span>: "manual" | "showall" | "focusnodes"</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">"showall"</span></div></div>
+			<p>Navigation mode - the algorithm that determines the expanding/collapsing logic.</p>
+			Valid values:
+				<ul class="values">
+				    <li><span class="property-value">manual</span> - Fully manual mode. At the start, only the nodes mentioned in <code>initialNodes</code> will be shown. Other nodes can be shown by expanding the initial nodes. Collapsing hides the collapsed node and all surrounding nodes, except for the very last visible node. Focusing/unfocusing nodes changes the node status, but does not do anything else. Node <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">relevance</a> is not used.
+				    </li><li><span class="property-value">showall</span> - The same as manual, but automatically shows ALL nodes at the start. <strong>CAUTION - if the network is large this will bring down the chart!</strong> If <code>initialNodes</code> contains any nodes, then additional nodes will be requested recursively starting from these. If <code>initialNodes</code> is null or empty, all nodes will be requested at the start.
+				    </li><li><span class="property-value">focusnodes</span> - Algorithm for exploring the graph by "walking" through it. Focusing a node expands surrounding nodes and unfocusing a node collapses them. Only nodes that are connected to a focused node are shown. Collapsing a node only hides nodes which are further away from a focus node. Node <a href="../../../full-reference/ItemsChartNode.html#doc_relevance">relevances</a> are calculated.
+				</li></ul>
+		    </div>
+		</div>
+		<div id="doc_numberOfFocusNodes" class="property" data-property="navigation.numberOfFocusNodes">
+		    <div class="property-header"><span class="property-name">numberOfFocusNodes</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">3</span></div></div>
+			<p>Maximum number of focused nodes. The <code>autoUnfocus</code> setting determines what happens when more nodes are focused.  <em>Used by modes: focusnodes</em></p>
+		    </div>
+		</div>
+	</div>
+
+    

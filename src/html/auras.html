@@ -1,0 +1,117 @@
+
+   <!-- <h2>Page title</h2> -->
+    <!--
+    
+    <div id="breadcrumbs" class="">
+        
+        <a href="#">Net Chart</a>
+        <a href="#">Settings</a>
+        <a href="#">Something</a>
+        <a href="#">And something</a>
+        
+    </div>
+    
+    -->
+    
+        <h2>NetChart.settings.auras</h2>
+<div id="breadcrumbs">
+    <a>Net Chart</a>
+    <a href="../settings.html">NetChart Settings</a>
+    <a href="auras.html">auras</a>
+</div><div>This section is defined by the type <a class="type-ref" href="../../../full-reference/ItemsChartSettingsNodesLayerAuras.html">ItemsChartSettingsNodesLayerAuras</a>.</div>
+<div class="class-info">
+	<div>Introduced in version <strong>1.15.0</strong>.</div>
+</div>
+<div class="class-description"><p>Contains settings for the auras drawn beneath the nodes.</p>
+</div>
+<h4>Properties</h4>
+	<div class="nested-code">
+		<div id="doc_cellSize" class="property" data-property="auras.cellSize">
+		    <div class="property-header"><span class="property-name">cellSize</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">3</span></div></div>
+			<p>The cell size of the grid (in display pixels). Smaller values result in more precise aura calculations but
+				can be much slower. Note that decreasing the value also increses the memory requirements which can be
+				significant if the number of auras is large.</p>
+		    </div>
+		</div>
+		<div id="doc_defaultColors" class="property" data-property="auras.defaultColors">
+		    <div class="property-header"><span class="property-name">defaultColors</span>: <a class="type-ref" href="../../../full-reference/Array.html">Array</a>&lt;<a class="type-ref" href="../../../full-reference/string.html">string</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">[
+				  "rgba(47,195,47,0.3)",
+				  "rgba(176,220,11,0.3)",
+				  "rgba(234,180,4,0.3)",
+				  "rgba(222,103,44,0.3)",
+				  "rgba(236,46,46,0.3)",
+				  "rgba(213,66,155,0.3)",
+				  "rgba(111,82,184,0.3)",
+				  "rgba(28,124,213,0.3)",
+				  "rgba(86,185,247,0.3)",
+				  "rgba(10,232,235,0.3)"
+				]</span></div></div>
+			<p>Defines the default colors that are applied to auras for whom there are no specific style settings
+				defined in the <code>style</code> property.</p>
+				<p>If this is set to an empty array, only auras explicitly defined in <code>style</code> will be displayed.</p>
+		    </div>
+		</div>
+		<div id="doc_defaultStyle" class="property" data-property="auras.defaultStyle">
+		    <div class="property-header"><span class="property-name">defaultStyle</span>: <a class="type-ref" href="../../../full-reference/ItemsChartSettingsAuraStyle.html">ItemsChartSettingsAuraStyle</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+					<div>Introduced in version <strong>1.16.0</strong>.</div>
+				</div>
+		<h5><a href="auras/defaultStyle.html">View section details</a></h5>
+			<p>Default style which applies to all auras. Specific aura styles will override the defaults.</p>
+		    </div>
+		</div>
+		<div id="doc_drawLimit" class="property" data-property="auras.drawLimit">
+		    <div class="property-header"><span class="property-name">drawLimit</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">0.8</span></div></div>
+			<p>The draw limit (0..1) which cells will be considered to belong to the aura.</p>
+				<p>Larger values result in smaller auras. The cells under the center of the node usually have values close to 1,
+				while the edges have values close to 0.</p>
+		    </div>
+		</div>
+		<div id="doc_enabled" class="property" data-property="auras.enabled">
+		    <div class="property-header"><span class="property-name">enabled</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">true</span></div></div>
+			<p>Specifies if the node auras are enabled.</p>
+		    </div>
+		</div>
+		<div id="doc_intensity" class="property" data-property="auras.intensity">
+		    <div class="property-header"><span class="property-name">intensity</span>: <a class="type-ref" href="../../../full-reference/number.html">number</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">6</span></div></div>
+			<p>The multiplier for the node radius that defines the total area of the aura the node emanates.</p>
+				<p>Note that this defines the size of the aura before the <code>drawLimit</code> value is applied to reduce the size
+				of the aura.</p>
+		    </div>
+		</div>
+		<div id="doc_overlap" class="property" data-property="auras.overlap">
+		    <div class="property-header"><span class="property-name">overlap</span>: <a class="type-ref" href="../../../full-reference/boolean.html">boolean</a></div>
+		    <div class="property-description">
+			<div class="property-info">
+				<div class="default-value">Default value: <span class="property-value">false</span></div></div>
+			<p>Specifies if the auras can be drawn overlapped or if every cell can only belong to a single aura.</p>
+		    </div>
+		</div>
+		<div id="doc_style" class="property" data-property="auras.style">
+		    <div class="property-header"><span class="property-name">style</span>: <a class="type-ref" href="../../../full-reference/Dictionary.html">Dictionary</a>&lt;<a class="type-ref" href="../../../full-reference/ItemsChartSettingsAuraStyle.html">ItemsChartSettingsAuraStyle</a>&gt;</div>
+		    <div class="property-description">
+			<div class="property-info">
+				</div>
+		<h5><a href="auras/style.html">View section details</a></h5>
+			<p>Defines specific styles for each aura. The key of the mapping has to match the aura ID.</p>
+		    </div>
+		</div>
+	</div>
+
+    
