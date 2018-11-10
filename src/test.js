@@ -23,7 +23,6 @@ function resolve(dir, dir2 = '') {
 
 async function main () {
   const browser = await puppeteer.launch(settings)
-  log(chalk.green('服务正常启动'))
   try {
   	const page = await browser.newPage()
   	page.setDefaultNavigationTimeout(600000)
@@ -31,11 +30,10 @@ async function main () {
 	  for (let i = 0; i < msg.args().length; ++i) {
 	  	console.log(`${i}: ${msg.args()[i]}`);
 	  }
-	  console.log(`<------------------------分界线------------------------------>`)
 	});
 
 
-	await page.evaluateOnNewDocument(() => {
+	await 	(() => {
 		// 遍历Dom 树
 		window.walkDOM = (node) => {
 	    	if (node === null) {
@@ -129,6 +127,7 @@ async function main () {
 
     await page.waitFor(1000)
 
+    // 实现 Net Chart 目录下所有 `a.drop` 元素的点击事件
     await page.evaluate(async () => {
     	const rootNode = document.querySelector('#menu > ul > li:nth-child(5) > ul > li:nth-child(5)')
     	await window.walkDOM(rootNode)
@@ -174,11 +173,6 @@ async function main () {
 		console.log('go to:' + a.href);
 		await page.waitFor(2000);
 
-		// 创建html
-		fs.readFile('./template.html', (err, data) => {
-			console.log(data)
-		})
-
 		const page_html = await page.evaluate((el) => {
 			return el.innerHTML
 		}, await page.$('#page'))
@@ -219,9 +213,9 @@ async function main () {
 		})
 	}
 
-    log(chalk.green('服务正常结束'))
+    console.log('服务正常结束')
   } catch (error) {
-  	log(chalk.red('服务连接超时'))
+  	console.log('服务连接超时')
   	console.log(error)
     // await browser.close()
   } finally {
