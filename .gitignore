@@ -1,5 +1,7 @@
 node_modules/
 /dist/
+/src/document/
+/src/full-reference/
 
 .idea
 .vscode
