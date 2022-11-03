@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.10.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-json-minify": "^1.2.2",
